@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home ]
+  skip_before_action :authenticate_user!, only: [ :home, :test ]
   before_action :check_signed_in
 
   def check_signed_in
@@ -7,5 +7,8 @@ class PagesController < ApplicationController
   end
 
   def home
+  end
+
+  def test
   end
 end

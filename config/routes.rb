@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   }
   root to: 'pages#home'
   get 'search', to: 'questionnaires#search'
+  get 'test', to: 'pages#test'
   resources :questionnaires
 end
